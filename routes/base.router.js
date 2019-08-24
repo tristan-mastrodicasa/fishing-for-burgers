@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/price_input', (req, res, next) => {
-	res.render('pages/price-input');
+    res.render('pages/price-input');
 });
 
 module.exports = router;
