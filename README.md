@@ -11,6 +11,12 @@ Dev server will automatically update when you make code changes
 
 `npm run build`
 
+## Compile Documentation
+
+`npm install -g apidoc`
+
+`apidoc -i ./routes -o doc/`
+
 ## Folder structure 
 
  - doc - Documentation (try to inline most of it)

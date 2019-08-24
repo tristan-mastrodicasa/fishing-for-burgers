@@ -8,8 +8,9 @@ class BurgerModel {
 	 * Create a burger
 	 * @param {string} imageUrl Url of the burger image
 	 */
-	constructor(imageUrl) {
+	constructor(name, imageUrl) {
 		this.imageUrl = imageUrl;
+		this.name = name;
 	}
 	
 	/**
@@ -18,7 +19,8 @@ class BurgerModel {
 	 */
 	getBurger() {
 		return { 
-			image: this.imageUrl
+			image: this.imageUrl,
+			name: this.name
 		}
 	}
 	
