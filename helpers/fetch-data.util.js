@@ -12,7 +12,15 @@ function fetchData (maxPrice) {
           .filter(event => event.length)
         return burgerName
       })
-      console.log(JSON.stringify(burgerData.flat().filter(name => name)))
+      return burgerData
+        .flat()
+        .filter(name => name)
+        .map(name => [
+          {
+            name: name,
+            image: ''
+          }
+        ])
     }
   }
   request.open(
@@ -20,11 +28,6 @@ function fetchData (maxPrice) {
     'https://visawoap.com/api/venues/page:1/limit:1000/.json?key=4e44f1ac85cd60e3caa56bfd4afb675e'
   )
   request.send()
-}
-
-function parseBurgerData (data) {
-  burgerdata = JSON.parse(request.responseText).venues
-  burgerData.map(venue => venue.Event).filter(event => event.name_of_burger)
 }
 
 module.exports = { fetchData }

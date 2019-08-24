@@ -7,7 +7,6 @@ const express = require('express')
 const fetchDataUtil = require('./helpers/fetch-data.util.js')
 
 // Import the route handlers
-const baseRoute = require('./routes/base')
 const routesHandler = require('./routes/routes-handler.js')
 
 const port = process.env.PORT || 80
