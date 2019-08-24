@@ -1,0 +1,13 @@
+.burger_img_size {
+    width: 30%;
+    height: 30%;
+}
+
+.head_title {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
