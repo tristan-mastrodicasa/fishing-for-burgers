@@ -4,8 +4,15 @@ function fetchData (maxPrice) {
   var request = new XMLHttpRequest()
   request.onreadystatechange = function () {
     if (request.readyState === 4 && request.status === 200) {
-      let burgerData = JSON.parse(request.responseText).venues // parseBurgerData(request.responseText)
-      console.log(burgerData)
+      let burgerData = JSON.parse(request.responseText)
+      burgerData = burgerData.venues.map(eventVenue => {
+        var venue = eventVenue.Venue
+        var burgerName = eventVenue.Event.filter(event => event.name_of_burger)
+          .map(event => event.name_of_burger) // easy to return more data here
+          .filter(event => event.length)
+        return burgerName
+      })
+      console.log(JSON.stringify(burgerData.flat().filter(name => name)))
     }
   }
   request.open(
@@ -21,5 +28,3 @@ function parseBurgerData (data) {
 }
 
 module.exports = { fetchData }
-
-// payload.venues.map(f => { var v = f.Venue; var nob = f.Event.filter(fe => fe.name_of_burger != undefined && fe.name_of_burger != ""); return nob; })
