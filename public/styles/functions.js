@@ -1,3 +1,3 @@
-function click(){
+function goToNextPage(){
  console.log("HI");
 }
