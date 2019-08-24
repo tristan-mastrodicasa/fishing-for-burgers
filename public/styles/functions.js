@@ -1,3 +1,3 @@
 function click(){
-  alert("HI");
+ console.log("HI");
 }
