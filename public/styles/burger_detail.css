@@ -11,3 +11,15 @@
     text-align: center;
     padding: 10px;
 }
+
+.content_center {
+    text-align: center;
+}
+
+.content_right {
+    text-align: right;
+}
+
+.table-style {
+    margin: auto
+}

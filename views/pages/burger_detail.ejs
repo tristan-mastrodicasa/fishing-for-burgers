@@ -11,31 +11,23 @@
     <!-- Main Style -->
     <link href="public/styles/burger_detail.css" rel="stylesheet">
 
-    <style type="text/css">
-        .content_center {
-            text-align: center;
-        }
-        
-        .content_center {
-            text-align: center;
-        }
-        
-        .table-style {
-            margin: auto
-        }
-    </style>
+    <script>
+        function doPrevious() {
+            alert("doPrevious")
+        };
+
+        function doNext() {
+            alert("doNext")
+        };
+    </script>
 </head>
 
 <body style="margin: 0px;background-color: #eeeeee">
     <div class="head_title">THE BEST BURGER</div>
-    <div class="content">
+    <div class="content_center">
 
         <img class="burger_img_size" src="https://clipartwork.com/wp-content/uploads/2017/02/best-hamburger-clipart.png">
-
-        <div class="carousel-item active">
-            <a class="image-box" style="background-image: url('/assets/img/image-placeholder.png');"></a>
-        </div>
-
+        <img src="‎⁨img/sanbao.jpg"> </img>
 
         <table class="table-style">
             <tr>
@@ -49,12 +41,10 @@
         </table>
     </div>
 
-    <button id="btn_previous">Previous</button>
+    <div class="content_center">
+        <button id="btn_previous" style="margin-right: 300px" onclick="doPrevious()">Previous</button>
 
-    <div>
-
-
-        <button id="btn_next">Next</button>
+        <button id="btn_next" style="margin-left: 300px" onclick="doNext()">Next</button>
     </div>
 </body>
 
