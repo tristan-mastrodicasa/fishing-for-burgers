@@ -7,7 +7,11 @@ const router = express.Router();
 const fetchData = require('../helpers/fetch-data.util.js');
 
 router.get('/', (req, res, next) => {
-	res.render('pages/index');
+    res.render('pages/index');
+});
+
+router.get('/price_input', (req, res, next) => {
+    res.render('pages/price-input');
 });
 
 router.get('/price_input', (req, res, next) => {
