@@ -1,32 +1,32 @@
 {
-	"name": "fishing-for-burgers",
-	"version": "1.0.0",
-	"description": "A burger selection tool",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "set NODE_ENV=development&& nodemon index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ghostcoder217/fishing-for-burgers.git"
-	},
-	"keywords": [
-		"burger",
-		"select"
-	],
-	"author": "Hire Me",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/ghostcoder217/fishing-for-burgers/issues"
-	},
-	"homepage": "https://github.com/ghostcoder217/fishing-for-burgers#readme",
-	"devDependencies": {
-		"nodemon": "^1.19.1"
-	},
-	"dependencies": {
-		"ejs": "^2.6.2",
-		"express": "^4.17.1",
-		"xmlhttprequest": "^1.8.0"
-	}
+  "name": "fishing-for-burgers",
+  "version": "1.0.0",
+  "description": "A burger selection tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostcoder217/fishing-for-burgers.git"
+  },
+  "keywords": [
+    "burger",
+    "select"
+  ],
+  "author": "Hire Me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghostcoder217/fishing-for-burgers/issues"
+  },
+  "homepage": "https://github.com/ghostcoder217/fishing-for-burgers#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "xmlhttprequest": "^1.8.0"
+  }
 }
