@@ -5,7 +5,7 @@
 
 const express = require('express');
 const router = express.Router();
-const fetchData = require('../helpers/fetch-data.util.js');
+// const fetchData = require('../helpers/fetch-data.util.js');
 
 /**
  * @api {get} / A page displaying the home page
@@ -33,7 +33,7 @@ router.get('/price_input', (req, res, next) => {
  * @apiParam {Number} max_price Maximum price constraint for the burger selection
  */
 router.get('/burger_display', (req, res, next) => {
-  res.render('pages/burger_detail', { name: fetchData(req.query.max_price)[0], price: req.query.max_price });
+  res.render('pages/burger_detail', { name: "Deluxe Burger", price: 23.33 });
 });
 
 module.exports = router;
