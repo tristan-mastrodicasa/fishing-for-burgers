@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
  * @apiGroup Index
  */
 router.get('/price_input', (req, res, next) => {
-	res.render('pages/price-input');
+	res.render('pages/page-input');
 });
 
 /**
