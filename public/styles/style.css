@@ -1,0 +1,77 @@
+
+.centerW {
+  top: 43%;
+  left:41%;
+  width: 280px;
+  height: 280px;
+}
+
+.centerRight {
+  top: 33%;
+  left:58%;
+  width: 365px;
+  height: 365px;
+}
+
+.centerLeft {
+  top: 49%;
+  left: 23%;
+  width: 230px;
+  height: 230px;
+}
+
+.titlePos {
+  margin: 0 auto;
+  display: block;
+  height: 250px;
+}
+
+.images{
+  display: flex;
+}
+.size{
+  width: 30%;
+
+}
+.sizeButton{
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 0;
+
+}
+
+
+/** Tristan */
+
+.burger-element {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+.centerTag {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.burger-element > * > button {
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 0;
+}
+
+.burger-element > a {
+  display: inline;
+  width: 100%;
+}
+
+.burger-element > img {
+  margin: 0 auto;
+  height: 280px;
+}
