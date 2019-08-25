@@ -4,7 +4,7 @@
  */
 
 const express = require('express')
-const fetchDataUtil = require('./helpers/fetch-data.util.js')
+const { fetchData } = require('./helpers/fetch-data.util.js')
 
 // Import the route handlers
 const routesHandler = require('./routes/routes-handler.js')
@@ -26,3 +26,5 @@ app.use('/public', express.static('public'))
 app.listen(port, async () => {
   console.log(`Server up and running on localhost:${port}`)
 })
+
+fetchData()

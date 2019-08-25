@@ -5,22 +5,32 @@ function fetchData (maxPrice) {
   request.onreadystatechange = function () {
     if (request.readyState === 4 && request.status === 200) {
       let burgerData = JSON.parse(request.responseText)
+
       burgerData = burgerData.venues.map(eventVenue => {
         var venue = eventVenue.Venue
         var burgerName = eventVenue.Event.filter(event => event.name_of_burger)
-          .map(event => event.name_of_burger) // easy to return more data here
+          .map(event => {
+            return {
+              name: event.name_of_burger,
+              image: event.image,
+              price: event.burger_price
+            }
+          })
           .filter(event => event.length)
+        console.log(JSON.stringify(burgerName))
         return burgerName
       })
+
+      console.log(JSON.stringify(burgerData))
       return burgerData
-        .flat()
-        .filter(name => name)
-        .map(name => [
-          {
-            name: name,
-            image: ''
-          }
-        ])
+      // .flat()
+      // .filter(name => name)
+      // .map(name => [
+      //   {
+      //     name: name,
+      //     image: ''
+      //   }
+      // ])
     }
   }
   request.open(
