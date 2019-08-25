@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node index.js"
+		"build": "set NODE_ENV=development&& nodemon index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +26,7 @@
 	},
 	"dependencies": {
 		"ejs": "^2.6.2",
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"xmlhttprequest": "^1.8.0"
 	}
 }
