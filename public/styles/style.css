@@ -1,8 +1,6 @@
-
-body{
+body {
   background-color: white;
 }
-
 .centreButton{
   /* position: absolute;
   top:35%;
@@ -37,4 +35,3 @@ body{
         0%   { transform: translateY(0); }
         50%  { transform: translateY(-5px); opacity: .8; }
         100% { transform: translateY(0); }
-}
