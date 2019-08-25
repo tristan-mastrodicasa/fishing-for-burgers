@@ -7,11 +7,12 @@ body{
   /* position: absolute;
   top:35%;
   left:50%; */
-  width: 300px;
+  padding-left: 2%;
+  max-width: 300px;
+  width: 80%;
   display: block;
   margin: 0 auto;
-  padding-left: 25px;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-name: bounce;
   animation-timing-function: linear;
@@ -23,15 +24,12 @@ body{
   left:20%;*/
   margin: 0 auto;
   display: block;
-  width:450px;
+  max-width:450px;
+  width: 80%;
 }
 
 @keyframes bounce {
         0%   { transform: translateY(0); }
-        50%  { transform: translateY(-5px); }
+        50%  { transform: translateY(-5px); opacity: .8; }
         100% { transform: translateY(0); }
-}
-
-a:hover{
-  opacity: .8;
 }
