@@ -10,6 +10,11 @@ body{
   width: 300px;
   display: block;
   margin: 0 auto;
+  padding-left: 25px;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
 }
 
 .centreImage{
@@ -19,6 +24,12 @@ body{
   margin: 0 auto;
   display: block;
   width:450px;
+}
+
+@keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
 }
 
 a:hover{
