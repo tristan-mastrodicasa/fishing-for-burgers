@@ -28,6 +28,11 @@ body{
   width: 80%;
 }
 
+.logo{
+  max-width: 100px;
+  width: 40%;
+}
+
 @keyframes bounce {
         0%   { transform: translateY(0); }
         50%  { transform: translateY(-5px); opacity: .8; }
