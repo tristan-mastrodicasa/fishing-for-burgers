@@ -1,44 +1,22 @@
-.slidecontainer {
-  width: 20%;
+
+body{
+  background-color: white;
 }
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+.centreButton{
+  position: absolute;
+  top:35%;
+  left:50%;
 }
 
-div.relative {
-  position: relative;
-  left: 190px;
-  top: 150px;
+.centreImage{
+  position: absolute;
+  top:15%;
+  left:20%;
+  width:500px;
+  height:500px;
 }
 
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 23px;
-  height: 24px;
-  border: 0;
-  background-image:url('/public/burger_sliderBlue.png');
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 23px;
-  height: 24px;
-  border: 0;
-  background-image: url('/public/burger_sliderBlue.png');
-  cursor: pointer;
+a:hover{
+  opacity: .8;
 }
