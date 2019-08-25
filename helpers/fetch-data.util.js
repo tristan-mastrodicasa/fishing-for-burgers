@@ -30,4 +30,4 @@ function fetchData (maxPrice) {
   request.send()
 }
 
-module.exports = { fetchData }
+module.exports = fetchData;
