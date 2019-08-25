@@ -33,7 +33,7 @@ router.get('/price_input', (req, res, next) => {
  * @apiParam {Number} max_price Maximum price constraint for the burger selection
  */
 router.get('/burger_display', (req, res, next) => {
-  res.render('pages/burger_detail', { name: "Tristan's Burger", price: req.query.max_price });
+  res.render('pages/burger_detail', { name: "Deluxe Burger", price: 23.33 });
 });
 
 module.exports = router;
