@@ -10,7 +10,7 @@ A burger selection tool
 
 Dev server will automatically update when you make code changes
 
-`npm localRun`
+`npm run local`
 
 ## Compile Documentation
 
