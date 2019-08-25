@@ -29,10 +29,11 @@
 .images{
   display: flex;
 }
+
 .size{
   width: 30%;
-
 }
+
 .sizeButton{
   color: white;
   background: blue;
@@ -74,4 +75,41 @@
 .burger-element > img {
   margin: 0 auto;
   height: 280px;
+
+body {
+  background-color: white;
+}
+
+.centreButton{
+  padding-left: 2%;
+  max-width: 300px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+.centreImage{
+  margin: 0 auto;
+  display: block;
+  max-width:450px;
+  width: 80%;
+}
+
+.logo{
+  max-width: 100px;
+  width: 40%;
+}
+
+@keyframes bounce {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-5px); opacity: .8; }
+        100% { transform: translateY(0); }
+}
+
+a:hover {
+  opacity: 0.8;
 }

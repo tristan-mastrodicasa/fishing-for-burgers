@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fishing For Burgers</title>
+
+    <!-- Main Style -->
+    <link href="public/styles/burger_detail.css" rel="stylesheet">
+
+    <script>
+    </script>
+</head>
+
+<body style="margin: 0px;background-color: #eeeeee">
+    <div class="head_title">THE BEST BURGER</div>
+    <div class="content_center">
+
+        <img class="burger_img_size" src="https://clipartwork.com/wp-content/uploads/2017/02/best-hamburger-clipart.png">
+
+        <table class="table-style">
+            <tr>
+                <td>Burger Name:</td>
+                <td><%= name %></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td>Wellington City</td>
+            </tr>
+            <tr>
+              <td>Max Price:</td>
+              <td>$<%= price %></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content_center">
+      <a href="/price_input">Back</a>
+    </div>
+</body>
+
+</html>
