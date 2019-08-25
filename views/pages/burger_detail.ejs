@@ -12,13 +12,6 @@
     <link href="public/styles/burger_detail.css" rel="stylesheet">
 
     <script>
-        function doPrevious() {
-            alert("doPrevious")
-        };
-
-        function doNext() {
-            alert("doNext")
-        };
     </script>
 </head>
 
@@ -27,24 +20,25 @@
     <div class="content_center">
 
         <img class="burger_img_size" src="https://clipartwork.com/wp-content/uploads/2017/02/best-hamburger-clipart.png">
-        <img src="‎⁨img/sanbao.jpg"> </img>
 
         <table class="table-style">
             <tr>
-                <td>Restaurant Name:</td>
-                <td>Burger Fuel</td>
+                <td>Burger Name:</td>
+                <td><%= name %></td>
             </tr>
             <tr>
                 <td>Location: </td>
                 <td>Wellington City</td>
             </tr>
+            <tr>
+              <td>Max Price</td>
+              <td>$<%= price %></td>
+            </tr>
         </table>
     </div>
 
     <div class="content_center">
-        <button id="btn_previous" style="margin-right: 300px" onclick="doPrevious()">Previous</button>
-
-        <button id="btn_next" style="margin-left: 300px" onclick="doNext()">Next</button>
+      <a href="/price_input">Back</a>
     </div>
 </body>
 
