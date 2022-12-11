@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "ejs": "^2.6.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "xmlhttprequest": "^1.8.0"
   }
 }
